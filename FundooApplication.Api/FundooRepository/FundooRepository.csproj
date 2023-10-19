@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FundooModel\FundooModel.csproj" />
+    <ProjectReference Include="..\NlogImplementation\NlogImplementation.csproj" />
   </ItemGroup>
 
 </Project>

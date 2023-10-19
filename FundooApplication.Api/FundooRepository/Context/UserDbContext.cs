@@ -1,8 +1,11 @@
-﻿using FundooModel.User;
+﻿using FundooModel.Labels;
+using FundooModel.Notes;
+using FundooModel.User;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using System.Text;
 
 namespace FundooRepository.Context
@@ -15,6 +18,8 @@ namespace FundooRepository.Context
 
         }
         public DbSet<Register> Register { get; set; }
+        public DbSet<Note> Notes { get; set; }
+        public DbSet<label> Labels { get; set; }
     }
 
 }

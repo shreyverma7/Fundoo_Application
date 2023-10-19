@@ -6,7 +6,8 @@ using System;
 
 namespace FundooApplication.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -15,6 +16,15 @@ namespace FundooApplication.Controllers
         {
             this.userManager = userManager;
         }
+
+        [HttpGet]
+        [Route("check")]
+        public async Task<ActionResult> UserRegister(int i)
+        {
+            return Ok();
+
+        }
+
 
         [HttpPost]
         [Route("Register")]
@@ -37,14 +47,14 @@ namespace FundooApplication.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public  ActionResult UserLogin(Login login)
+        public ActionResult UserLogin(Login login)
         {
             try
             {
-                var result =  this.userManager.LoginUser(login);
+                var result = this.userManager.LoginUser(login);
                 if (result != null)
                 {
-                    return this.Ok(new { Status = true, Message = "User Login Successful", data = login });
+                    return this.Ok(new { Status = true, Message = "User Login Successful", data = result });
                 }
                 return this.BadRequest(new { Status = false, Message = "User Login UnSuccessful" });
             }
@@ -70,6 +80,28 @@ namespace FundooApplication.Controllers
             catch (Exception ex)
             {
                 return this.NotFound(new { Status = false, Message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("ForgetPassword")]
+        public ActionResult ForgetPassword(string email)
+        {
+            try
+            {
+                var resultLog = this.userManager.ForgetPassword(email);
+                if (resultLog != null)
+                {
+                    return Ok(new { success = true, message = "Reset Email Send" });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "Reset UnSuccessful" });
+                }
+            }
+            catch (System.Exception)
+            {
+                throw;
             }
         }
     }
