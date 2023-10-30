@@ -3,6 +3,7 @@ using FundooModel.Notes;
 using FundooModel.User;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
@@ -20,6 +21,9 @@ namespace FundooRepository.Context
         public DbSet<Register> Register { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<label> Labels { get; set; }
+        public DbSet<Collaborator> Collaborator { get; set; }
+
+
     }
 
 }

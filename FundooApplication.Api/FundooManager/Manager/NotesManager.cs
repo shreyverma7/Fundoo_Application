@@ -1,6 +1,7 @@
 ﻿using FundooManager.IManager;
 using FundooModel.Notes;
 using FundooRepository.IRepository;
+using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 namespace FundooManager.Manager
@@ -22,50 +23,56 @@ namespace FundooManager.Manager
             var result = this.NotesRepository.EditNotes(note);
             return result;
         }
-        public IEnumerable<Note> GetAllNotes(string email)
+        public IEnumerable<Note> GetAllNotes(int userId)
         {
-            var result = this.NotesRepository.GetAllNotes(email);
+            var result = this.NotesRepository.GetAllNotes(userId);
             return result;
         }
-        public bool DeleteNote(int noteid, string email)
+        public bool DeleteNote(int noteid, int userId)
         {
-            var result = this.NotesRepository.DeleteNote(noteid, email);
+            var result = this.NotesRepository.DeleteNote(noteid, userId);
             return result;
         }
-        public IEnumerable<Note> GetArcheived(string email)
+        public IEnumerable<Note> GetArcheived(int userId)
         {
-            var result = this.NotesRepository.GetArcheived(email);
+            var result = this.NotesRepository.GetArcheived(userId);
             return result;
         }
-        public IEnumerable<Note> GetPinnedTask(string email)
+        public IEnumerable<Note> GetPinnedTask(int userId)
         {
-            var result = this.NotesRepository.GetPinnedTask(email);
+            var result = this.NotesRepository.GetPinnedTask(userId);
             return result;
         }
-        public IEnumerable<Note> GetThrashedTask(string email)
+        public IEnumerable<Note> GetThrashedTask(int userId)
         {
-            var result = this.NotesRepository.GetThrashedTask(email);
+            var result = this.NotesRepository.GetThrashedTask(userId);
             return result;
         }
-        public bool TrashNote(string email)
+        public bool TrashNote(int userId)
         {
-            var result = this.NotesRepository.TrashNote(email);
+            var result = this.NotesRepository.TrashNote(userId);
             return result;
         }
-        public Note ArcheiveNote(int noteId, string email)
+        public Note ArcheiveNote(int noteId, int userId)
         {
-            var result = this.NotesRepository.ArcheiveNote(noteId, email);
+            var result = this.NotesRepository.ArcheiveNote(noteId, userId);
             return result;
         }
-        public Note PinNote(int noteId, string email)
+        public Note PinNote(int noteId, int userId)
         {
-            var result = this.NotesRepository.PinNote(noteId, email);
+            var result = this.NotesRepository.PinNote(noteId, userId);
             return result;
         }
     
-        public bool RestoreNotes(int noteId, string email)
+        public bool RestoreNotes(int noteId, int userId)
         {
-            var result = this.NotesRepository.RestoreNotes(noteId, email);
+            var result = this.NotesRepository.RestoreNotes(noteId, userId);
+            return result;
+        }
+
+        public string Image(IFormFile file, int noteId)
+        {
+            var result = this.NotesRepository.Image(file, noteId);
             return result;
         }
     }

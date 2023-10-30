@@ -43,11 +43,16 @@ namespace FundooApplication
             services.AddControllers();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddDbContextPool<UserDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
+            //user
             services.AddScoped<IUserManager, UserManager>();
             services.AddScoped<IUserRepository, UserRepository>();
+            //Notes
             services.AddScoped<INotesManger, FundooManager.Manager.NotesManager>();
             services.AddScoped<INotesRepository, NotesRepository>();
-
+            //collabrtor
+            services.AddScoped<ICollaboratorManager, CollaboratorManager>();
+            services.AddScoped<ICollaboratorRepository, CollaboratorRepository>();
+            //labels
             services.AddScoped<ILabelsManager, LabelsManager>();
             services.AddScoped<ILabelsRepository, LabelsRepository>();
             services.AddSwaggerGen(c =>
@@ -80,6 +85,7 @@ namespace FundooApplication
                          },
 
                           new string[]{}
+
 
 }
 

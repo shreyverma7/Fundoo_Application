@@ -10,7 +10,9 @@ namespace FundooManager.IManager
     {
         public Task<int> AddLabels(label labels);
         public label EditLabel(label labels);
-        public IEnumerable<label> GetAllLabels(string email);
-        public bool DeleteLabels(string email);
+        public IEnumerable<label> GetAllLabels(int userId);
+        public bool DeleteLabels(int userId);
+
+        public IEnumerable<label> GetAllLabelNotes(int userId);
     }
 }

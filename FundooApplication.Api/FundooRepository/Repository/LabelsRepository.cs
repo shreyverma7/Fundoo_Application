@@ -31,21 +31,27 @@ namespace FundooRepository.Repository
         }
         public label EditLabel(label labels)
         {
-            var data = this.context.Labels.Where(x => x.Id == labels.Id && x.EmailId == labels.EmailId).FirstOrDefault();
-            if (data != null)
+
+            try
             {
-                data.Id = labels.Id;
-                data.LabelName  = labels.LabelName;
-                data.EmailId = labels.EmailId;
+                var result = this.context.Labels.Where(x => x.LabelId == labels.LabelId).FirstOrDefault();
+                result.LabelName = labels.LabelName;
+                this.context.Labels.Update(result);
                 nlog.LogInfo("Edited label successful");
-                return data;
+                var data = this.context.SaveChanges();
+                if (data != 0)
+                    return result;
+                return null;
             }
-            nlog.LogWarn("No labels found");
-            return null;
+            catch (Exception ex)
+            {
+                nlog.LogWarn("No labels found");
+                return null;
+            }
         }
-        public IEnumerable<label> GetAllLabels(string email)
+        public IEnumerable<label> GetAllLabels(int userId)
         {
-            var result = this.context.Labels.Where(x => x.EmailId == email).AsEnumerable();
+            var result = this.context.Labels.Where(x => x.Id.Equals(userId)).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("Got all labels");
@@ -55,9 +61,9 @@ namespace FundooRepository.Repository
             return null;
         }
 
-        public bool DeleteLabels(string email)
+        public bool DeleteLabels(int labelId)
         {
-            var result = this.context.Labels.Where(x => x.EmailId == email ).ToList();
+            var result = this.context.Labels.Where(x => x.LabelId == labelId).ToList();
             foreach (var data in result)
             {
                 nlog.LogInfo("Deleted label successfully");
@@ -71,6 +77,22 @@ namespace FundooRepository.Repository
             }
             nlog.LogWarn("labels not found");
             return false;
+        }
+        public IEnumerable<label> GetAllLabelNotes(int userId)
+        {
+            List<label> list = new List<label>();
+            var result = this.context.Notes.Where(x => x.Id.Equals(userId)).Join(this.context.Labels, Note => Note.Id, label => label.Id,
+      (Note, label) => new label
+      {
+          //NoteId = Note.Id,
+          LabelId = label.Id,
+          LabelName = label.LabelName
+      });
+            foreach (var data in result)
+            {
+                list.Add(data);
+            }
+            return list;
         }
     }
 }

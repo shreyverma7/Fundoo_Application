@@ -1,8 +1,12 @@
-﻿using FundooModel.Notes;
+﻿using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using FundooModel.Notes;
 using FundooRepository.Context;
 using FundooRepository.IRepository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using NlogImplementation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,7 +16,7 @@ namespace FundooRepo.Repository
     {
         public readonly UserDbContext context;
         NlogOperation nlog = new NlogOperation();
-        public NotesRepository(UserDbContext context )
+        public NotesRepository(UserDbContext context)
         {
             this.context = context;
         }
@@ -25,11 +29,11 @@ namespace FundooRepo.Repository
         }
         public Note EditNotes(Note note)
         {
-            var data = this.context.Notes.Where(x => x.Id == note.Id && x.EmailId == note.EmailId).FirstOrDefault();
+            var data = this.context.Notes.Where(x => x.NoteId == note.NoteId).FirstOrDefault();
             if (data != null)
             {
                 data.Id = note.Id;
-                data.EmailId = note.EmailId;
+                //    data.EmailId = note.EmailId;
                 data.Remainder = note.Remainder;
                 data.Title = note.Title;
                 data.Color = note.Color;
@@ -48,9 +52,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Note id or Note Emial did not found!");
             return null;
         }
-        public IEnumerable<Note> GetAllNotes(string email)
+        public IEnumerable<Note> GetAllNotes(int userId)
         {
-            var result = this.context.Notes.Where(x => x.EmailId == email).AsEnumerable();
+            var result = this.context.Notes.Where(x => x.Id == userId).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("Retrived All Notes successfully");
@@ -59,9 +63,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Email doesn't match");
             return null;
         }
-        public bool DeleteNote(int noteid, string email)
+        public bool DeleteNote(int noteid, int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == noteid && x.EmailId == email).FirstOrDefault();
+            var result = this.context.Notes.Where(x => x.NoteId == noteid && x.Id == userId).FirstOrDefault();
             if (result != null)
             {
                 result.IsTrash = true;
@@ -78,9 +82,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Empty value sent");
             return false;
         }
-        public IEnumerable<Note> GetThrashedTask(string email)
+        public IEnumerable<Note> GetThrashedTask(int userId)
         {
-            var result = this.context.Notes.Where(x => x.EmailId == email && x.IsTrash == true).AsEnumerable();
+            var result = this.context.Notes.Where(x => x.Id == userId && x.IsTrash == true).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("trash task found");
@@ -89,9 +93,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Not trash found");
             return null;
         }
-        public bool TrashNote(string email)
+        public bool TrashNote(int userId)
         {
-            var result = this.context.Notes.Where(x => x.EmailId == email && x.IsTrash == true).ToList();
+            var result = this.context.Notes.Where(x => x.Id == userId && x.IsTrash == true).ToList();
             foreach (var data in result)
             {
                 nlog.LogInfo("Task deleted successfully");
@@ -106,9 +110,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn(" No task to Delete");
             return false;
         }
-        public Note PinNote(int noteId, string email)
+        public Note PinNote(int noteId, int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == noteId && x.EmailId == email).FirstOrDefault();
+            var result = this.context.Notes.Where(x => x.NoteId == noteId && x.Id == userId).FirstOrDefault();
             if (result != null)
             {
                 result.IsPin = true;
@@ -120,9 +124,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("No Pinned note found");
             return null;
         }
-        public IEnumerable<Note> GetArcheived(string email)
+        public IEnumerable<Note> GetArcheived(int userId)
         {
-            var result = this.context.Notes.Where(x => x.EmailId == email && x.IsArchive == true).AsEnumerable();
+            var result = this.context.Notes.Where(x => x.Id == userId && x.IsArchive == true).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("Get take that achived successfully");
@@ -131,9 +135,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("No achived notes found");
             return null;
         }
-        public Note ArcheiveNote(int noteId, string email)
+        public Note ArcheiveNote(int noteId, int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == noteId && x.EmailId == email).FirstOrDefault();
+            var result = this.context.Notes.Where(x => x.NoteId == noteId && x.Id == userId).FirstOrDefault();
             if (result != null)
             {
                 result.IsArchive = true;
@@ -145,9 +149,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Cannot add archeive Notes");
             return null;
         }
-        public IEnumerable<Note> GetPinnedTask(string email)
+        public IEnumerable<Note> GetPinnedTask(int userId)
         {
-            var result = this.context.Notes.Where(x => x.EmailId == email && x.IsPin == true).AsEnumerable();
+            var result = this.context.Notes.Where(x => x.Id == userId && x.IsPin == true).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("Get all task pinned successfully");
@@ -156,9 +160,9 @@ namespace FundooRepo.Repository
             nlog.LogWarn("No pinned task found");
             return null;
         }
-        public bool RestoreNotes(int noteId,string email)
+        public bool RestoreNotes(int noteId, int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == noteId && x.EmailId == email).FirstOrDefault();
+            var result = this.context.Notes.Where(x => x.NoteId == noteId && x.Id == userId).FirstOrDefault();
             if (result != null)
             {
                 result.IsTrash = false;
@@ -172,6 +176,67 @@ namespace FundooRepo.Repository
             }
             nlog.LogWarn("Restored not found ");
             return false;
+        }
+
+        public string Image(IFormFile file, int noteId)
+
+        {
+
+            try
+
+            {
+
+                if (file == null)
+
+                {
+
+                    return null;
+
+                }
+
+                var stream = file.OpenReadStream();
+
+                var name = file.FileName;
+
+                Account account = new Account("dqtdpxlam", "933235679953766", "D_dTx2_TlgeLDvLIw5VSyeI7Fdg");
+
+                Cloudinary cloudinary = new Cloudinary(account);
+
+                var uploadParams = new ImageUploadParams()
+
+                {
+
+                    File = new FileDescription(name, stream)
+
+                };
+
+                ImageUploadResult uploadResult = cloudinary.Upload(uploadParams);
+
+                cloudinary.Api.UrlImgUp.BuildUrl(String.Format("{0}.{1}", uploadResult.PublicId, uploadResult.Format));
+
+                var data = this.context.Notes.Where(t => t.NoteId == noteId).FirstOrDefault();
+
+                string Image = uploadResult.Url.ToString();
+                data.Image = Image.ToString();
+
+                var result = this.context.SaveChanges();
+
+                nlog.LogInfo("Image Added Successfully");
+
+                return Image;
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                nlog.LogWarn(ex.Message);
+
+                return ex.Message;
+
+            }
+
         }
     }
 }

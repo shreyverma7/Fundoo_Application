@@ -22,9 +22,9 @@ namespace FundooManager.Manager
             return result;
         }
 
-        public bool DeleteLabels(string email)
+        public bool DeleteLabels(int userId)
         {
-            var result = this.LabelRepository.DeleteLabels(email);
+            var result = this.LabelRepository.DeleteLabels(userId);
             return result;
         }
 
@@ -34,9 +34,14 @@ namespace FundooManager.Manager
             return result;
         }
 
-        public IEnumerable<label> GetAllLabels(string email)
+        public IEnumerable<label> GetAllLabels(int userId)
         {
-            var result = this.LabelRepository.GetAllLabels(email);
+            var result = this.LabelRepository.GetAllLabels(userId);
+            return result;
+        }
+        public IEnumerable<label> GetAllLabelNotes(int userId)
+        {
+            var result = this.LabelRepository.GetAllLabelNotes(userId);
             return result;
         }
     }

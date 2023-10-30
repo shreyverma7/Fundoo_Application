@@ -18,7 +18,7 @@ namespace FundooApplication.Controllers
             this.labelsManager = labelsManager;
         }
         [HttpPost]
-        [Route("Add New Label")]
+        [Route("AddNewLabel")]
         public async Task<ActionResult> AddLabe(label labels)
         {
             try
@@ -37,7 +37,7 @@ namespace FundooApplication.Controllers
         }
 
         [HttpPut]
-        [Route("Edit Existing Labels")]
+        [Route("EditExistingLabels")]
         public ActionResult EditLabel(label labels)
         {
             try
@@ -56,12 +56,12 @@ namespace FundooApplication.Controllers
         }
 
         [HttpPut]
-        [Route("Delete Label")]
-        public ActionResult DeleteLabels( string email)
+        [Route("DeleteLabel")]
+        public ActionResult DeleteLabels(int userId)
         {
             try
             {
-                var result = this.labelsManager.DeleteLabels( email);
+                var result = this.labelsManager.DeleteLabels(userId);
                 if (result != null)
                 {
                     return this.Ok(new { Status = true, Message = "Deleted label" });
@@ -74,17 +74,34 @@ namespace FundooApplication.Controllers
             }
         }
         [HttpGet]
-        [Route("Get All Label")]
-        public async Task<ActionResult> GetAllLabels(string email)
+        [Route("GetAllLabel")]
+        public async Task<ActionResult> GetAllLabels(int userId)
         {
             try
             {
-                var result = this.labelsManager.GetAllLabels(email);
+                var result = this.labelsManager.GetAllLabels(userId);
                 if (result != null)
                 {
                     return this.Ok(new { Status = true, Message = "labels displayed", data = result });
                 }
                 return this.BadRequest(new { Status = false, Message = "No labels Found" });
+            }
+            catch (Exception ex)
+            {
+                return this.NotFound(new { Status = false, Message = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllLabelNotes")]
+        public async Task<ActionResult> GetAllLabelNotes(int userId)
+        {
+            try
+            {
+                var result = this.labelsManager.GetAllLabelNotes(userId);
+
+                return this.Ok(new { Status = true, Message = "labels displayed", data = result });
+
             }
             catch (Exception ex)
             {

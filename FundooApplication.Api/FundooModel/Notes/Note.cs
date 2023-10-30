@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using FundooModel.User;
 
 namespace FundooModel.Notes
 {
@@ -10,9 +11,9 @@ namespace FundooModel.Notes
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        [Required]
-        public string EmailId { get; set; }
+        public int NoteId { get; set; }
+      //  [Required]
+      //  public string EmailId { get; set; }
         [Required]
         public string Title { get; set; }
         public string Description { get; set; }
@@ -24,5 +25,10 @@ namespace FundooModel.Notes
         public bool IsTrash { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }
+
+        public int Id { get; set; } // Foreign key property
+        [ForeignKey("Id")]
+        public Register Register { get; set; } // Navigation property
+
     }
 }
