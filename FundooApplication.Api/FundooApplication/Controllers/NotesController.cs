@@ -13,7 +13,7 @@ namespace FundooApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize]
+    [Authorize]
     public class NotesController : ControllerBase
     {
         public readonly INotesManger NoteManager;
@@ -93,6 +93,26 @@ namespace FundooApplication.Controllers
                 return this.NotFound(new { Status = false, Message = ex.Message });
             }
         }
+        [HttpGet]
+        [Route("GetNoteById")]
+        public async Task<ActionResult> GetNoteById(int userId, int noteId)
+        {
+            try
+            {
+                var result = this.NoteManager.GetNoteById(userId, noteId);
+                if (result != null)
+                {
+                    return this.Ok(new { Status = true, Message = "Notes by id Found", data = result });
+                }
+                return this.BadRequest(new { Status = false, Message = "No Notes with id  Found" });
+            }
+            catch (Exception ex)
+            {
+                return this.NotFound(new { Status = false, Message = ex.Message });
+            }
+
+        }
+
         [HttpGet]
         [Route("GetAllArcheivedNotes")]
         public async Task<ActionResult> GetArcheived(int userId)

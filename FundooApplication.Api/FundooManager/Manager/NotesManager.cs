@@ -75,5 +75,11 @@ namespace FundooManager.Manager
             var result = this.NotesRepository.Image(file, noteId);
             return result;
         }
+        public Note GetNoteById(int userId, int noteId)
+        {
+            var result = this.NotesRepository.GetNoteById(userId, noteId);
+            return result;
+
+        }
     }
 }

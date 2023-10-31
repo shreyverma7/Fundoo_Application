@@ -27,9 +27,9 @@ namespace FundooManager.Manager
             var result = this.CollabRepository.DeleteCollab(noteId, userId);
             return result;
         }
-        public IEnumerable<Collaborator> GetAllCollabNotes(int userId, string labelId)
+        public IEnumerable<Collaborator> GetAllCollabNotes(int userId)
         {
-            var result = this.CollabRepository.GetAllCollabNotes(userId, labelId);
+            var result = this.CollabRepository.GetAllCollabNotes(userId);
             return result;
         }
         public IEnumerable<NotesCollab> GetAllNotesColllab(int userId)

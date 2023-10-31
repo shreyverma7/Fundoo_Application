@@ -61,11 +61,11 @@ namespace FundooApplication.Controllers
 
         [HttpGet]
         [Route("GetAllCollab")]
-        public async Task<ActionResult> GetAllCollabNotes(int userId, string receiverId)
+        public async Task<ActionResult> GetAllCollabNotes(int userId)
         {
             try
             {
-                var result = this.collaboratorManager.GetAllCollabNotes(userId, receiverId);
+                var result = this.collaboratorManager.GetAllCollabNotes(userId);
                 if (result != null)
                 {
                     return this.Ok(new { Status = true, Message = "All Collaborators Found", data = result });

@@ -121,6 +121,13 @@ namespace FundooApplication
 
                 };
 
+
+            });
+            //redish
+            services.AddDistributedRedisCache(Options =>
+            {
+                Options.Configuration = "localhost:6379";
+                Options.InstanceName = "Fundoocache";
             });
         }
 

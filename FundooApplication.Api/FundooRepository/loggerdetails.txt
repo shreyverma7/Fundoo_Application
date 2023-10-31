@@ -97,3 +97,8 @@ token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]
 2023-10-30 13:18:13.8325|INFO|NlogImplementation.NlogOperation|Retrived All Notes successfully
 2023-10-30 13:24:40.1207|INFO|NlogImplementation.NlogOperation|Retrived All Notes successfully
 2023-10-30 13:24:44.7835|INFO|NlogImplementation.NlogOperation|Retrived All Notes successfully
+2023-10-30 17:41:40.0049|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-10-31 12:15:13.0886|INFO|NlogImplementation.NlogOperation|Got all labels
+2023-10-31 12:15:41.9401|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added
+2023-10-31 12:27:52.9913|INFO|NlogImplementation.NlogOperation|Got all labels
+2023-10-31 12:28:10.7773|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added

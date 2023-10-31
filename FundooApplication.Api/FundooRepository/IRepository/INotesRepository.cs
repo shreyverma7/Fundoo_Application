@@ -21,6 +21,8 @@ namespace FundooRepository.IRepository
  
         public bool RestoreNotes(int noteId, int userId);
         public string Image(IFormFile file, int noteId);
+        public Note GetNoteById(int userId, int noteId);
+       
 
     }
 }

@@ -4,7 +4,9 @@ using FundooModel.Notes;
 using FundooRepository.Context;
 using FundooRepository.IRepository;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using NlogImplementation;
 using System;
 using System.Collections.Generic;
@@ -16,9 +18,11 @@ namespace FundooRepo.Repository
     {
         public readonly UserDbContext context;
         NlogOperation nlog = new NlogOperation();
-        public NotesRepository(UserDbContext context)
+        private readonly IDistributedCache distributedCache;
+        public NotesRepository(UserDbContext context, IDistributedCache distributedCache)
         {
             this.context = context;
+            this.distributedCache = distributedCache;
         }
         public Task<int> AddNotes(Note note)
         {
@@ -52,16 +56,33 @@ namespace FundooRepo.Repository
             nlog.LogWarn("Note id or Note Emial did not found!");
             return null;
         }
-        public IEnumerable<Note> GetAllNotes(int userId)
+        public IEnumerable<Note> GetAllNotes(int id)
         {
-            var result = this.context.Notes.Where(x => x.Id == userId).AsEnumerable();
+            
+            var result = this.context.Notes.Where(x => x.Id == id).AsEnumerable();
             if (result != null)
             {
-                nlog.LogInfo("Retrived All Notes successfully");
+                //PUSH THE data to  cache
+                this.PutListToCache(id);
                 return result;
             }
-            nlog.LogWarn("Email doesn't match");
+            var data = this.GetListFromCache("noteList");
             return null;
+        }
+        public Note GetNoteById(int userId, int noteId)
+        {
+            var data = this.GetListFromCache("noteList");
+            if (data != null)
+            {
+                nlog.LogInfo("[cache] GetNotes by id successfull");
+                return data.Where(x => x.Id == userId && x.NoteId == noteId).FirstOrDefault();
+            }
+            else
+            {
+                nlog.LogInfo("GetNotes by id successfull");
+                var result = this.context.Notes.Where(x => x.Id == userId && x.NoteId == noteId).FirstOrDefault();
+                return result;
+            }
         }
         public bool DeleteNote(int noteid, int userId)
         {
@@ -84,14 +105,18 @@ namespace FundooRepo.Repository
         }
         public IEnumerable<Note> GetThrashedTask(int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == userId && x.IsTrash == true).AsEnumerable();
-            if (result != null)
+            var data = this.GetListFromCache("noteList");
+            if (data != null)
             {
-                nlog.LogInfo("trash task found");
+                nlog.LogInfo("[cache] GetThrashedTask by id successfull");
+                return data.Where(x => x.Id == userId && x.IsTrash == true).AsEnumerable();
+            }
+            else
+            {
+                nlog.LogInfo("GetThrashedTask by id successfull");
+                var result = this.context.Notes.Where(x => x.Id == userId && x.IsTrash == true).AsEnumerable();
                 return result;
             }
-            nlog.LogWarn("Not trash found");
-            return null;
         }
         public bool TrashNote(int userId)
         {
@@ -126,14 +151,20 @@ namespace FundooRepo.Repository
         }
         public IEnumerable<Note> GetArcheived(int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == userId && x.IsArchive == true).AsEnumerable();
-            if (result != null)
+           
+            var data = this.GetListFromCache("noteList");
+            if (data != null)
             {
-                nlog.LogInfo("Get take that achived successfully");
+                nlog.LogInfo("[cache] GetArcheived by id successfull");
+                return data.Where(x => x.Id == userId && x.IsArchive == true).AsEnumerable();
+            }
+            else
+            {
+                nlog.LogInfo("GetArcheived by id successfull");
+                var result = this.context.Notes.Where(x => x.Id == userId && x.IsArchive == true).AsEnumerable();
                 return result;
             }
-            nlog.LogWarn("No achived notes found");
-            return null;
+            
         }
         public Note ArcheiveNote(int noteId, int userId)
         {
@@ -151,14 +182,20 @@ namespace FundooRepo.Repository
         }
         public IEnumerable<Note> GetPinnedTask(int userId)
         {
-            var result = this.context.Notes.Where(x => x.Id == userId && x.IsPin == true).AsEnumerable();
-            if (result != null)
+           
+            var data = this.GetListFromCache("noteList");
+            if (data != null)
             {
-                nlog.LogInfo("Get all task pinned successfully");
+                nlog.LogInfo("[cache] GetPinnedTask by id successfull");
+                return data.Where(x => x.Id == userId && x.IsPin == true).AsEnumerable();
+            }
+            else
+            {
+                nlog.LogInfo("GetPinnedTask by id successfull");
+                var result = this.context.Notes.Where(x => x.Id == userId && x.IsPin == true).AsEnumerable();
                 return result;
             }
-            nlog.LogWarn("No pinned task found");
-            return null;
+          
         }
         public bool RestoreNotes(int noteId, int userId)
         {
@@ -237,6 +274,18 @@ namespace FundooRepo.Repository
 
             }
 
+        }
+        public void PutListToCache(int userid)
+        {
+            var options = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(60));
+            var enlist = this.context.Notes.Where(x => x.Id == userid);
+            var jsonstring = JsonConvert.SerializeObject(enlist);
+            distributedCache.SetString("noteList", jsonstring, options);
+        }
+        public List<Note> GetListFromCache(string key)
+        {
+            var CacheString = this.distributedCache.GetString(key);
+            return JsonConvert.DeserializeObject<IEnumerable<Note>>(CacheString).ToList();
         }
     }
 }

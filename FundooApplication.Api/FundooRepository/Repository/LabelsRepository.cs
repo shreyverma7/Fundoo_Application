@@ -2,7 +2,9 @@
 using FundooModel.Notes;
 using FundooRepository.Context;
 using FundooRepository.IRepository;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using NLog.Fluent;
 using NlogImplementation;
 using System;
@@ -17,10 +19,12 @@ namespace FundooRepository.Repository
     public class LabelsRepository : ILabelsRepository
     {
         public readonly UserDbContext context;
+        public readonly IDistributedCache distributedCache;
         NlogOperation nlog = new NlogOperation();
-        public LabelsRepository(UserDbContext context)
+        public LabelsRepository(UserDbContext context, IDistributedCache distributedCache)
         {
             this.context = context;
+            this.distributedCache = distributedCache;
         }
         public Task<int> AddLabels(label labels)
         {
@@ -55,9 +59,11 @@ namespace FundooRepository.Repository
             if (result != null)
             {
                 nlog.LogInfo("Got all labels");
+                this.PutListToCache(userId);
                 return result;
             }
             nlog.LogError("Label on email not found");
+            var data = this.GetListFromCache("Labellist");
             return null;
         }
 
@@ -93,6 +99,19 @@ namespace FundooRepository.Repository
                 list.Add(data);
             }
             return list;
+        }
+
+        public void PutListToCache(int userid)
+        {
+            var options = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(60));
+            var enlist = this.context.Labels.Where(x => x.Id == userid);
+            var jsonstring = JsonConvert.SerializeObject(enlist);
+            distributedCache.SetString("Labellist", jsonstring, options);
+        }
+        public List<Note> GetListFromCache(string key)
+        {
+            var CacheString = this.distributedCache.GetString(key);
+            return JsonConvert.DeserializeObject<IEnumerable<Note>>(CacheString).ToList();
         }
     }
 }

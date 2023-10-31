@@ -1,6 +1,8 @@
 ﻿using FundooModel.Notes;
 using FundooRepository.Context;
 using FundooRepository.IRepository;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 using NlogImplementation;
 using System;
 using System.Collections.Generic;
@@ -13,10 +15,12 @@ namespace FundooRepository.Repository
     public class CollaboratorRepository : ICollaboratorRepository
     {
         public readonly UserDbContext context;
+        public readonly IDistributedCache distributedCache;
         NlogOperation nlog = new NlogOperation();
-        public CollaboratorRepository(UserDbContext context)
+        public CollaboratorRepository(UserDbContext context, IDistributedCache distributedCache)
         {
             this.context = context;
+            this.distributedCache = distributedCache;
         }
 
         public Task<int> AddCollaborator(Collaborator collaborator)
@@ -47,16 +51,18 @@ namespace FundooRepository.Repository
             return false;
         }
 
-        public IEnumerable<Collaborator> GetAllCollabNotes(int userId, string labelId)
+        public IEnumerable<Collaborator> GetAllCollabNotes(int userId)
         {
             var result = this.context.Collaborator.Where(x => x.SenderUserId == userId || x.ReceiverUserId == userId).AsEnumerable();
             if (result != null)
             {
                 nlog.LogInfo("Got all notes with Collabrator added");
+                this.PutListToCache(userId);
                 return result;
             }
+            var data = this.GetListFromCache("Collablist");
             nlog.LogWarn("Collaborator with notes not found");
-            return null;
+            return null;          
         }
 
         public IEnumerable<NotesCollab> GetAllNotesColllab(int userId)
@@ -91,7 +97,18 @@ namespace FundooRepository.Repository
             nlog.LogInfo("Dispalyed All Collab Notes Successfully");
             return result;
         }
-
+        public void PutListToCache(int userid)
+        {
+            var options = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(60));
+            var enlist = this.context.Collaborator.Where(x => x.SenderUserId == userid || x.ReceiverUserId == userid);
+            var jsonstring = JsonConvert.SerializeObject(enlist);
+            distributedCache.SetString("Collablist", jsonstring, options);
+        }
+        public List<Note> GetListFromCache(string key)
+        {
+            var CacheString = this.distributedCache.GetString(key);
+            return JsonConvert.DeserializeObject<IEnumerable<Note>>(CacheString).ToList();
+        }
 
     }
 }
