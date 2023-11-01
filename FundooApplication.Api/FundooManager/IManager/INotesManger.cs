@@ -22,5 +22,7 @@ namespace FundooManager.IManager
         public bool RestoreNotes(int noteId, int userId);
         public string Image(IFormFile file, int noteId);
         public Note GetNoteById(int userId, int noteId);
+        public IEnumerable<Note> RemainderById(int userId);
+        public Task<int> CreateCopyNote(int userId, int noteId)
     }
 }

@@ -13,7 +13,7 @@ namespace FundooApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+   // [Authorize]
     public class NotesController : ControllerBase
     {
         public readonly INotesManger NoteManager;
@@ -256,6 +256,45 @@ namespace FundooApplication.Controllers
                     return this.Ok(new { Status = true, Message = "Image Successful", data = result });
                 }
                 return this.BadRequest(new { Status = false, Message = "No Image found" });
+            }
+            catch (Exception ex)
+            {
+                return this.NotFound(new { Status = false, Message = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("RemainderById")]
+       
+        public async Task<ActionResult> RemainderById(int userId)
+        {
+            try
+            {
+                var result = this.NoteManager.RemainderById(userId);
+                if (result != null)
+                {
+                    return this.Ok(new { Status = true, Message = "Remainder Found", data = result });
+                }
+                return this.BadRequest(new { Status = false, Message = "No Remainder Found" });
+            }
+            catch (Exception ex)
+            {
+                return this.NotFound(new { Status = false, Message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("CopyNoteById")]
+        public async Task<ActionResult> CreateCopyNote(int userId, int noteId)
+        {
+            try
+            {
+                var result = await this.NoteManager.CreateCopyNote(userId, noteId);
+                if (result == 1)
+                {
+                    return this.Ok(new { Status = true, Message = "Duplicated Notes Successful", data = result });
+                }
+                return this.BadRequest(new { Status = false, Message = "Duplicated Notes UnSuccessful" });
             }
             catch (Exception ex)
             {

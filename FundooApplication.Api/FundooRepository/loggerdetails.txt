@@ -102,3 +102,4 @@ token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]
 2023-10-31 12:15:41.9401|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added
 2023-10-31 12:27:52.9913|INFO|NlogImplementation.NlogOperation|Got all labels
 2023-10-31 12:28:10.7773|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added
+2023-11-01 10:41:40.9751|INFO|NlogImplementation.NlogOperation|[cache] GetPinnedTask by id successfull

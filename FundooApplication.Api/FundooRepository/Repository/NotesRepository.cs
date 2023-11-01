@@ -275,6 +275,49 @@ namespace FundooRepo.Repository
             }
 
         }
+
+        public IEnumerable<Note> RemainderById(int userId)
+        {
+
+            var data = this.GetListFromCache("noteList");
+            if (data != null)
+            {
+                nlog.LogInfo("[cache] RemainderById by id successfull");
+                return data.Where(x => x.Id == userId && x.Remainder != null).AsEnumerable();
+            }
+            else
+            {
+                nlog.LogInfo("RemainderById by id successfull");
+                var result = this.context.Notes.Where(x => x.Id == userId && x.Remainder != null).AsEnumerable();
+                return result;
+            }
+
+        }
+        public Task<int> CreateCopyNote(int userId, int noteId)
+        {
+            var data = this.context.Notes.Where(x => x.Id == userId && x.NoteId == noteId).FirstOrDefault();
+            var note = new Note
+            {
+                Title = data.Title,
+                Description = data.Description,
+                Image = data.Image,
+                Color = data.Color,
+                Remainder = data.Remainder,
+                IsArchive = data.IsArchive,
+                IsPin = data.IsPin,
+                IsTrash = data.IsTrash,
+                CreatedDate = data.CreatedDate,
+                ModifiedDate = data.ModifiedDate,
+                Id = data.Id,
+            };
+
+            this.context.Notes.Add(note);
+            var result = this.context.SaveChangesAsync();
+            nlog.LogInfo("Duplicate notes by id successfull");
+            return result;
+        }
+       
+
         public void PutListToCache(int userid)
         {
             var options = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(60));

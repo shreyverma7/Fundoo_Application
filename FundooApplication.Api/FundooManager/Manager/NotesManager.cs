@@ -81,5 +81,16 @@ namespace FundooManager.Manager
             return result;
 
         }
+        public IEnumerable<Note> RemainderById(int userId)
+        {
+            var result = this.NotesRepository.RemainderById(userId);
+            return result;
+        }
+        public Task<int> CreateCopyNote(int userId, int noteId)
+        {
+            var result = this.NotesRepository.CreateCopyNote(userId, noteId);
+            return result;
+
+        }
     }
 }
