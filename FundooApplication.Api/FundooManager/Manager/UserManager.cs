@@ -25,9 +25,9 @@ namespace FundooManager.Manager
             var result = this.userRepository.LoginUser(login);
             return result;
         }
-        public Register ResetPassword(ResetPassword reset)
+        public Register ResetPassword(string email1, ResetPassword reset)
         {
-            var result = this.userRepository.ResetPassword(reset);
+            var result = this.userRepository.ResetPassword(email1,reset);
             return result;
         }
         public string ForgetPassword(string Email)

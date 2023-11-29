@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using NlogImplementation;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 namespace FundooRepo.Repository
@@ -60,6 +61,10 @@ namespace FundooRepo.Repository
         {
             
             var result = this.context.Notes.Where(x => x.Id == id).AsEnumerable();
+            //to convet that into json
+            WriteToJsonFile(result.ToList());
+            //key valu
+            getAllNotesWithOutId();
             if (result != null)
             {
                 //PUSH THE data to  cache
@@ -68,6 +73,28 @@ namespace FundooRepo.Repository
             }
             var data = this.GetListFromCache("noteList");
             return null;
+        }
+
+        public void getAllNotesWithOutId()
+        {
+            var result = this.context.Notes.AsEnumerable();
+            Dictionary<int,List<Note>> dict = new Dictionary<int, List<Note>>();
+            var group =result.GroupBy(x => x.Id);
+            foreach (var item in group)
+            {
+                dict.Add(item.Key, item.ToList());
+            }
+
+            string res = JsonConvert.SerializeObject(dict);
+            string FileName = @"D:\Bridgelabz Problem statement\Resouce\AllNotes.json";
+            File.WriteAllText(FileName,res);
+        }
+        //practice
+        public void WriteToJsonFile(List<Note> notes)
+        {
+            string fileName = @"D:\Bridgelabz Problem statement\Resouce\FundooJson.json";
+            string result = JsonConvert.SerializeObject(notes);
+            File.WriteAllText(fileName, result);
         }
         public Note GetNoteById(int userId, int noteId)
         {
@@ -311,8 +338,9 @@ namespace FundooRepo.Repository
                 Id = data.Id,
             };
 
-            this.context.Notes.Add(note);
-            var result = this.context.SaveChangesAsync();
+            /* this.context.Notes.Add(note);*/
+            var result = this.AddNotes(note);
+            /* var result = this.context.SaveChangesAsync();*/
             nlog.LogInfo("Duplicate notes by id successfull");
             return result;
         }

@@ -103,3 +103,557 @@ token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]
 2023-10-31 12:27:52.9913|INFO|NlogImplementation.NlogOperation|Got all labels
 2023-10-31 12:28:10.7773|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added
 2023-11-01 10:41:40.9751|INFO|NlogImplementation.NlogOperation|[cache] GetPinnedTask by id successfull
+2023-11-01 12:42:04.1812|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 09:44:48.7768|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:46:14.9666|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 09:47:18.1795|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:48:35.6854|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:54:03.9016|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:54:03.9016|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 09:56:06.8207|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:56:06.8207|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 09:57:38.3282|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:57:38.3282|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 09:58:37.9321|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 09:58:37.9321|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 10:00:45.3456|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-02 10:00:45.3497|INFO|NlogImplementation.NlogOperation|Duplicate notes by id successfull
+2023-11-02 10:21:24.0326|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:23:41.1648|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:23:51.0907|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:24:05.0060|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:25:51.1038|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:25:57.1558|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:26:40.6524|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-02 10:27:02.9235|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-02 10:27:31.2468|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-02 10:41:40.9135|INFO|NlogImplementation.NlogOperation|Got all notes with Collabrator added
+2023-11-15 14:43:09.3000|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-15 14:46:11.2831|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-15 14:48:12.9276|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-15 14:50:20.5180|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-15 15:15:20.9956|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-15 15:17:30.5077|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-15 15:17:37.9712|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-15 15:20:20.1245|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 09:47:13.0332|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-16 09:53:26.0179|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-16 10:04:27.7998|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:04:37.6362|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:00.9430|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:42.6888|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:45.5257|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:45.7139|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:45.9152|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:46.1101|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:46.2879|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:46.4799|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:46.6778|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:46.8733|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:47.0818|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:47.3135|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:59.0336|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:59.2478|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:05:59.5045|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:06:17.9981|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:08:24.3575|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:08:34.0724|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:08:35.9013|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:08:38.3390|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:10:56.9548|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:10:58.2465|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 10:11:16.1599|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 11:42:08.7716|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-16 11:42:33.7013|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-16 11:43:17.9557|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 11:45:08.6698|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-16 12:23:27.9103|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-16 12:25:40.8754|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-16 12:26:49.1400|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-16 12:36:49.6780|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:38:58.9529|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:44:31.4713|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:44:54.0588|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:45:20.8040|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:45:33.6707|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:45:41.8504|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:46:20.7300|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:47:16.8492|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:47:23.7842|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:47:55.9276|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:48:20.6543|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:51:01.1844|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:51:08.0620|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:51:20.0465|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:52:38.8031|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:52:57.5328|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:53:53.2682|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:54:02.5315|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:54:43.3428|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:54:48.8725|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:57:21.3092|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:58:28.3945|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:58:30.1117|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:58:34.1192|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 12:59:44.6387|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:00:47.7635|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 13:02:02.3823|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 13:05:11.5929|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 13:06:18.8830|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:07:48.0668|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:07:50.6822|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:07:59.6911|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:08:25.6481|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:08:52.1096|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 13:09:20.0958|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:11:40.0081|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:11:44.1136|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:14:02.0885|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 13:15:16.2699|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:16:13.0719|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 13:16:15.1103|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 13:16:16.1900|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 17:05:02.9922|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 17:05:05.1819|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 17:05:06.6467|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 17:05:27.8217|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 17:05:30.8451|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 17:05:31.2182|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 17:05:31.9496|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:01.8669|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:04.0030|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:40.0743|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:42.9627|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:51.0903|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:06:53.3502|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:09:08.7510|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:09:09.6988|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 18:09:10.8818|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 18:09:11.9480|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 18:09:35.7980|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:09:43.2118|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:09:45.1308|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-16 18:09:45.5632|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-16 18:09:46.2607|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-16 18:13:27.6746|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-17 09:46:32.2971|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-17 09:46:58.2157|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-17 09:49:54.8129|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-17 09:50:05.9588|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-17 11:57:37.7144|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-17 13:10:13.3564|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-17 17:45:40.1294|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 11:32:06.0517|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-20 11:33:17.5923|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-20 11:34:00.7902|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 11:36:33.0579|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 11:36:55.9542|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 11:38:30.0044|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 11:39:22.8539|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 11:56:04.6876|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-20 11:56:59.8094|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 11:59:18.7738|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 11:59:33.5913|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 11:59:41.8353|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 11:59:48.7963|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 12:00:04.2291|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 12:00:35.6847|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 12:03:35.8682|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 12:03:38.5883|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 12:03:39.7123|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:09:51.9782|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:10:38.5528|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:12:09.1472|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:13:50.3906|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:13:53.8841|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:13:54.6602|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:14:08.7831|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:14:13.7556|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:14:21.6245|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:14:33.9987|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:14:40.3919|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:15:04.8743|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:15:09.7435|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:15:15.7622|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:15:58.1105|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 12:16:58.6062|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 12:17:26.2997|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 12:17:37.4993|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:22:27.8963|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:25:34.5146|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 12:25:38.3806|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 12:25:41.1611|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 12:43:30.8837|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:43:57.9346|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:44:23.5027|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:44:37.5982|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:44:43.0402|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:45:57.1161|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 12:54:06.1708|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:54:34.2229|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:58:05.4555|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 12:58:11.8823|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 13:02:09.3261|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:03:31.4605|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:03:34.5487|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:03:55.8920|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:05:05.7184|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:05:17.4927|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:05:20.5268|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:05:23.0157|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:05:26.6144|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:06:31.6661|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:10:43.7935|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:10:54.4626|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:10:55.3438|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:10:56.0730|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:10:58.4158|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:10:59.5070|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:11:00.6093|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:11:57.2046|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:12:08.9010|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:12:12.0983|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:12:13.1519|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:13:46.9711|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:14:00.7356|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:14:03.1832|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:14:06.6202|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:14:55.6752|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:15:14.8727|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:15:19.2491|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:15:20.8138|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:15:27.8272|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:15:31.8509|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:15:33.9534|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:16:18.7016|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:16:21.9187|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:17:41.1137|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 13:17:44.0623|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:17:52.4092|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 13:17:55.3019|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 13:17:57.2923|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:18:11.9101|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:18:14.4603|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:18:18.6655|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:19:56.3054|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:20:06.3576|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:20:15.0314|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:20:38.0394|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:21:32.9858|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-20 13:21:43.8614|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:21:51.7736|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 13:21:59.8880|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 14:41:49.0671|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 14:41:54.6733|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 14:41:55.7030|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 14:42:02.0407|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 14:59:00.1496|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 14:59:36.3159|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:37.6772|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:41.5453|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:42.4055|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:42.6630|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:43.9251|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:44.1891|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:44.4051|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:44.6212|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:44.7949|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:45.1259|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:45.3167|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:45.5311|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:45.7472|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:45.9727|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:46.8175|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:47.0226|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:47.2190|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:47.3894|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 14:59:47.5568|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 15:00:09.5864|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 15:26:16.6477|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 15:27:56.4883|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 15:27:58.5222|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 15:28:00.7628|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-20 15:28:01.6159|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-20 15:28:07.8142|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-20 15:51:32.5341|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 15:52:46.4825|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 15:53:45.8225|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:22:02.6248|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:22:43.8659|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-20 16:23:10.5397|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 16:23:23.8373|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:27:49.6157|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 16:28:02.9438|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:30:37.9790|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 16:32:08.0758|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 16:32:17.5129|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:55:22.8597|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 16:55:29.0699|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 16:59:31.7629|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-20 17:39:49.0994|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:39:58.7057|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:40:04.6911|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:40:20.3442|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:40:21.8574|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:40:25.2888|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:40:42.1382|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:44:30.2635|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:44:39.9549|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:44:48.0517|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:45:22.2038|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:45:31.5951|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:45:41.9830|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:45:54.0841|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:46:32.4149|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-20 17:46:47.0135|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:46:54.1338|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:47:17.4787|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:47:25.1088|WARN|NlogImplementation.NlogOperation|Password Does not match!
+2023-11-20 17:48:41.7247|INFO|NlogImplementation.NlogOperation|Password reset successfully
+2023-11-20 17:49:01.5474|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-20 17:52:42.9167|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 10:06:58.9030|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 10:09:51.8912|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 10:09:52.9163|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-21 11:55:27.6559|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 11:58:39.8625|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 12:21:23.6262|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 12:21:39.5615|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 12:22:06.8164|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 12:55:45.1131|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 13:08:45.4054|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 13:08:49.0906|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 15:12:43.6403|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 15:25:58.5900|WARN|NlogImplementation.NlogOperation|Note id or Note Emial did not found!
+2023-11-21 15:40:51.8419|WARN|NlogImplementation.NlogOperation|Note id or Note Emial did not found!
+2023-11-21 16:06:37.1397|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 16:06:39.7170|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 16:06:40.8549|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-21 16:06:44.3750|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 16:06:57.0250|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 16:06:59.1624|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-21 16:07:00.1657|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 16:07:17.1276|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-21 16:07:28.1549|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 16:07:50.7585|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 17:45:45.7955|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-21 17:45:52.1476|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-21 17:47:22.7821|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 17:47:29.6223|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-21 18:16:01.4995|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-22 10:10:40.9261|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-22 10:10:40.9261|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-22 11:12:52.6588|WARN|NlogImplementation.NlogOperation|Note id or Note Emial did not found!
+2023-11-22 11:13:54.0924|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-22 11:19:22.3120|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 11:21:52.5706|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-22 11:23:16.2293|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-22 11:37:15.7658|WARN|NlogImplementation.NlogOperation|Cannot add archeive Notes
+2023-11-22 15:13:11.1663|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-22 15:17:24.6796|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 15:17:47.9088|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 15:38:58.3168|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-22 15:42:05.0573|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 15:53:40.6687|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 16:08:05.5458|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-22 16:32:03.4573|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-22 16:35:10.0174|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-22 23:24:29.0819|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 23:25:36.8373|WARN|NlogImplementation.NlogOperation|Note id or Note Emial did not found!
+2023-11-22 23:26:28.5540|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 23:31:16.5174|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-22 23:33:45.4081|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0627|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-22 23:34:49.0998|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-22 23:35:05.7272|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-22 23:36:01.6085|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-22 23:36:18.7963|WARN|NlogImplementation.NlogOperation|Note id or Note Emial did not found!
+2023-11-22 23:36:42.4421|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 23:39:03.3805|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 23:44:20.5902|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 23:46:36.7842|WARN|NlogImplementation.NlogOperation|Empty value sent
+2023-11-22 23:55:17.8548|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-22 23:56:48.0000|WARN|NlogImplementation.NlogOperation|User with the specified email not found
+2023-11-22 23:57:53.3325|INFO|NlogImplementation.NlogOperation|Registered successfully
+2023-11-23 00:00:23.4193|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-23 00:03:26.2048|WARN|NlogImplementation.NlogOperation|Cannot add archeive Notes
+2023-11-23 00:04:02.3261|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:04:03.5039|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:04:04.4884|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:05:13.0246|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 00:05:42.9398|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:10:49.0347|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:11:06.8310|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:11:12.2637|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:11:23.1847|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:12:24.3363|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-23 00:13:10.9520|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:13:12.9372|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:13:23.1771|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:13:50.2534|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:14:08.1166|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:14:11.7232|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:15:32.3068|WARN|NlogImplementation.NlogOperation|Cannot add archeive Notes
+2023-11-23 00:15:53.7339|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:15:59.9792|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:16:20.8835|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:16:37.4983|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:17:18.5915|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:20:13.1012|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:20:27.6860|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:20:44.0305|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:20:57.5269|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:22:13.0360|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:22:32.5921|WARN|NlogImplementation.NlogOperation|Cannot add archeive Notes
+2023-11-23 00:22:51.0222|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:22:53.7467|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:24:32.7985|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:24:56.8060|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:25:06.1576|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-23 00:25:36.8152|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:00.6244|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:04.3195|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:08.3531|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:13.5133|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:32.9454|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:40.3362|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:26:44.2655|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:27:13.2591|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 00:36:53.4426|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 00:37:14.8264|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 00:37:36.4137|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 00:38:00.6118|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:38:06.5154|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 00:38:12.0968|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:38:49.4948|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 00:38:53.0574|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:38:58.3192|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 00:38:58.8050|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:39:56.4349|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 00:50:13.6073|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 00:50:38.0781|INFO|NlogImplementation.NlogOperation|Edited successfully
+2023-11-23 00:52:23.9245|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 00:52:34.1164|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:52:40.4753|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 00:52:54.5071|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 00:54:01.2025|INFO|NlogImplementation.NlogOperation|Edited successfully
+2023-11-23 00:54:14.7051|INFO|NlogImplementation.NlogOperation|Edited successfully
+2023-11-23 00:59:49.7444|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:00:03.9886|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:00:05.5989|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:00:22.9326|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:00:26.6988|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:03:34.7671|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:08:25.2754|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 01:08:28.8721|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 01:08:35.6739|INFO|NlogImplementation.NlogOperation|Task added archeive successfully
+2023-11-23 01:08:35.9090|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 01:08:40.2412|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 01:09:42.9967|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:09:44.5273|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:09:44.7676|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:09:45.2877|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:09:45.4947|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:09:45.6930|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:14:13.1635|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 01:14:24.4802|INFO|NlogImplementation.NlogOperation|Edited successfully
+2023-11-23 01:20:17.2945|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 01:20:22.8819|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 01:20:26.4506|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 01:20:44.4599|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 01:21:04.7001|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 01:21:15.0976|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 03:21:36.6990|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 03:26:21.5203|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:26:54.6509|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:26:56.2463|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:27:01.5017|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:27:10.6080|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:31:03.8538|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:31:16.4789|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:31:20.6376|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:31:26.4780|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:31:27.9812|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:41:58.7891|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:42:43.8029|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:43:16.6761|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:43:23.2186|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:43:31.7900|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:47:13.6972|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 03:47:24.0925|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:12:19.6104|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:12:24.7917|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:35:32.2235|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:35:34.3740|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:35:37.5076|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:46:03.5609|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:46:29.0017|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:47:46.8294|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:47:50.8229|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:48:44.7075|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:48:47.7401|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:48:50.4334|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:48:53.6288|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:49:05.7249|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:49:07.3196|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:49:08.6178|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:50:05.6538|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:50:10.1326|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:50:23.2173|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 04:50:28.4513|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 04:50:30.8060|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:33.8967|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:40.4453|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-23 04:50:40.6365|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:42.4107|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:43.3461|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:43.5996|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:50:51.7036|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:51:08.1674|WARN|NlogImplementation.NlogOperation|Restored not found 
+2023-11-23 04:51:08.6624|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:52:02.4280|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:52:08.9842|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:52:39.6877|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 04:53:11.5140|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:53:13.2076|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:53:14.1848|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 04:53:18.4706|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 07:07:44.5588|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 07:16:26.8194|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 07:16:31.3664|INFO|NlogImplementation.NlogOperation|[cache] RemainderById by id successfull
+2023-11-23 07:16:34.8234|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 07:16:36.3193|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:19:32.6344|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:19:34.0397|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:19:52.1802|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:19:53.8207|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:20:13.7078|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:20:14.9269|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:20:16.4631|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:20:18.0872|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:20:56.2887|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:21:10.9073|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:21:15.4258|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:21:18.4323|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:21:47.5628|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:22:26.6956|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:22:34.4417|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:22:53.6418|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-23 07:22:53.6551|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-23 07:22:53.7757|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-23 07:22:54.0641|INFO|NlogImplementation.NlogOperation|[cache] GetThrashedTask by id successfull
+2023-11-23 07:23:24.1075|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 07:23:38.6833|INFO|NlogImplementation.NlogOperation|Edited successfully
+2023-11-23 07:23:41.2787|INFO|NlogImplementation.NlogOperation|[cache] GetArcheived by id successfull
+2023-11-23 07:28:52.3536|INFO|NlogImplementation.NlogOperation|Task deleted successfully
+2023-11-23 07:28:52.3536|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-23 07:29:53.5539|WARN|NlogImplementation.NlogOperation| No task to Delete
+2023-11-23 19:49:36.2988|INFO|NlogImplementation.NlogOperation|Login successfully
+2023-11-23 19:50:45.1587|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 19:51:46.4016|INFO|NlogImplementation.NlogOperation|Added Note successfully
+2023-11-23 19:55:42.2563|INFO|NlogImplementation.NlogOperation|Login successfully

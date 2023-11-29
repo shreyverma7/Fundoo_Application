@@ -10,7 +10,7 @@ namespace FundooManager.IManager
     {
         public Task<int> RegisterUser(Register register);
         public string LoginUser(Login login);
-        public Register ResetPassword(ResetPassword reset);
+        public Register ResetPassword(string email,ResetPassword reset);
 
         public string ForgetPassword(string email);
     }

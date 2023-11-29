@@ -13,7 +13,6 @@ namespace FundooApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize]
     public class NotesController : ControllerBase
     {
         public readonly INotesManger NoteManager;
